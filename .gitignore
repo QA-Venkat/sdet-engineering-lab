@@ -8,7 +8,7 @@ node_modules/
 # Logs
 logs/
 *.log
-npm-debug.log*
+npm-debug.log*p
 yarn-debug.log*
 yarn-error.log*
 
@@ -36,6 +36,4 @@ cypress/screenshots/
 cypress/videos/
 playwright-report/
 
-# Lock files (optional decision)
-# package-lock.json
-# yarn.lock
+output.json
