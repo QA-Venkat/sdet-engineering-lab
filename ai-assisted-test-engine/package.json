@@ -1,15 +1,15 @@
 {
-  "name": "nlp-lab",
+  "name": "ai-automation-lab",
   "version": "1.0.0",
+  "description": "AI based testcase generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Venkat",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "compromise": "^14.14.5"
+    "compromise": "^14.15.0",
+    "natural": "^8.1.1"
   }
 }
