@@ -1,8 +1,10 @@
 const nlp = require("compromise");
-const doc = nlp("User should login successfully");
+const doc = nlp("User should log in with valid credentials successfully.");
 //compromise
 const sentenceArray = doc.sentences().out("array");
+console.log(`The sentence Array is ${sentenceArray}`);
 const [sentence] = sentenceArray;
+console.log(`Ths sentence is ${sentence}`);
 const allTerms = doc.json().map((sentence) =>
   sentence.terms.map((term) => ({
     text: term.text,
@@ -11,7 +13,7 @@ const allTerms = doc.json().map((sentence) =>
 );
 // console.log(JSON.stringify(allTerms, null, 2));
 const pos = allTerms.flat();
-// console.log(pos);
+console.log(`pos is ${pos}`);
 
 // Extracted:
 const extracted = {
@@ -121,3 +123,13 @@ function findRelationship(pos) {
   }
   return relationship;
 }
+
+//NER
+//System logs out inactive users after 15 minutes. //Duration
+// System locks account after 5 failed login attempts. //count
+// User uploads PDF files. //File type
+// System sends OTP to email. //Communucatioh channel & Authentication
+
+//System must lock the account after 5 failed login attempts.
+//User can upload PDF files up to 20 MB.
+// Application supports Chrome and Firefox browsers. // browsers
